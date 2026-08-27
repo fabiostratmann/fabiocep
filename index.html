@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Fábio</title>
+</head>
+<body>
+    <center><h1>Olá, bem vindo à minha primeira programação</h1></center><br>
+    <center><h2>Esta é a aula de Início à Programação</h2></center><br>
+
+    <script>
+    document.write("<center>Seja bem vindo(a)</center>"); 
+    </script>
+    <br><br>
+
+    <center><button type="button" onclick= "mFuncao()" >Vamos explorar as possibilidades. Clique Aqui!</button></center>
+    <center><p id="paragrafo" style="display: none;" >Em frente</p></center>
+    
+
+    <script>
+        function mFuncao() {
+    var x = document.getElementById("paragrafo");
+    
+    // Altera o estilo para "block" fazendo o texto aparecer
+    x.style.display = "block"; 
+
+    x.style.textAlign = "center"; 
+    
+    // CORREÇÃO 1: Faz o botão "Ver Imagem" aparecer quando o texto aparecer
+        document.getElementById("btnImagem").style.display = "inline-block";
+    }
+
+    // CORREÇÃO 2: Nova função colocada no lugar certo para o segundo botão funcionar
+    function mostrarImagem() {
+        document.getElementById("minhaImagem").style.display = "block";
+    }
+    </script>
+    
+    </script>
+
+
+    <center><button id="btnImagem" type="button" onclick="mostrarImagem()" style="display: none;">Ver Imagem</button></center>
+    <br><br>
+    
+    <!-- Tag da imagem  -->
+    <center><img id="minhaImagem" src="C:\Users\Aluno\Documents\ProgFabio\Imagem1.png" alt="Imagem de exemplo" style="display: none;"></center>
+    <br><br>
+    <br><br>
+   
+
+
+
+</script>
+    
+</body>
+</html>
